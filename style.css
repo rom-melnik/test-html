@@ -402,7 +402,7 @@ padding: 0 19.99px;
 
 .flexslider {
     height: 435px;
-
+    border: none !important;
 }
 
 .flex-caption {
