@@ -23,8 +23,8 @@
             <p>министерство образования и науки<br> российской федерации</p>
         </div>
         <form>
-            <input type="text" placeholder="Найти информацию..">
-            <button type="submit"></button>
+            <input id="search_key" type="text" placeholder="Найти информацию..">
+            <button id="search_submit" type="submit"></button>
         </form>
 
         <div class="text-center">
@@ -141,6 +141,10 @@
                         },
                         controlsContainer: $(".custom-controls-container"),
                         customDirectionNav: $(".custom-navigation a")
+                    });
+                    $('#search_submit').click(function() {
+                        $('#search_key').toggle();
+                        $('#search_submit').toggleClass('active');
                     });
                 });
             </script>
