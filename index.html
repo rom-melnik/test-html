@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body class="loading">
+<div class="wrapper">
+
+    <header class="header">
+        <div class="header_left_menu"></div>
+        <div class="header_logo">
+            <a href="#"><img src="./img/logo.png"></a>
+        </div>
+        <div class="header_title">
+            <p>министерство образования и науки<br> российской федерации</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Найти информацию..">
+            <button type="submit"></button>
+        </form>
+
+        <div class="text-center">
+            <span class="main_hint_header">
+                            <a class="" href="#">
+                            <span class="header_question header_icons" title=""></span>
+            </a>
+            <span class="header_hint">Вопрос</span>
+            </span>
+        </div>
+
+        <div class="text-center">
+            <span class="main_hint_header">
+                            <span id="login_link" class="mx-user_icon header_icons"></span>
+            <span class="header_hint">Войти</span>
+            </span>
+        </div>
+
+        <div class="block_vk">
+            <a href="#" target="_blank"></a>
+        </div>
+        <div class="block_ok">
+            <a href="#" target="_blank"></a>
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">Траектория</a></li>
+                <li><a href="#">Организации</a></li>
+                <li><a href="#">Профессии</a></li>
+                <li><a href="#">Актуально</a></li>
+                <li><a href="#">Обсуждения</a></li>
+                <li><a href="#">Мой кабинет</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <!-- .header-->
+
+    <main class="content">
+
+        
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <p class="flex-caption">Интерактивная сеть организаций и проектов</p>
+                            <p class="flex-description">вовлечения обучающихся и студентов в активную социальную практику</p>
+                            <img src="img/slider.png" />
+                        </li>
+                        <li>
+                            <p class="flex-caption">Интерактивная сеть организаций и проектов</p>
+                            <p class="flex-description">вовлечения обучающихся и студентов в активную социальную практику</p>
+                            <img src="img/slider.png" />
+                        </li>
+                        <li>
+                            <p class="flex-caption">Интерактивная сеть организаций и проектов</p>
+                            <p class="flex-description">вовлечения обучающихся и студентов в активную социальную практику</p>
+                            <img src="img/slider.png"  />
+                        </li>
+                    </ul>
+                </div>
+                <div class="custom-navigation">
+                    <a href="#" class="flex-prev"></a>
+                    <div class="custom-controls-container"></div>
+                    <a href="#" class="flex-next"></a>
+                </div>
+                
+            </section>
+            <div class="people">
+                               
+                                <div class="title_people">Кто мы?</div>
+                                <div class="text_people">
+                                <ul>
+                                    <li>Хочешь узнать, какие колледжи, вузы подходят именно тебе?</li>
+                                    <li>Где найти работу с твоим характером?</li>
+                                    <li>Где поиграть в футбол, научиться играть на гитаре, рисовать или стать волонтером?
+                                    </li>
+                                </ul>
+                                <p class="bold">Новая интерактивная сеть – именно для тебя!</p>
+                                <p>Пройди тесты по психологии, профориентации прямо на сайте онлайн и узнай больше о своих способностях и месте их наилучшего применения.</p>
+                                <p>С помощью результатов тестов ты сможешь получить рекомендацию с траекторией, которая определит наиболее подходящее именно тебе место учебы, работы и дополнительной занятости.
+                                </p>
+                                <p>Общайся с друзьями, создавай сообщества, ищи информацию о спортивных и культурных секциях для студентов и кружках для школьников. Если ты хочешь стать волонтером или воплотить свою идею в жизнь, смотри информацию об общественных объединениях.</p>
+                                <p class="bold">Сервисы интерактивной сети бесплатны – нажимай кнопку «Вход» прямо
+                                сейчас!</p>
+                                   </div>
+                                    <div class="button_enter">
+                                        <button class="my_button">Вход</button>
+                                    </div>
+                                </div>
+                                <div class="trajectory">
+                                    <div class="title_trajectory">траектория</div>
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="interactive"></div>
+            <!-- jQuery -->
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+            <!-- FlexSlider -->
+            <script defer src="jquery.flexslider-min.js"></script>
+
+            <script type="text/javascript">
+                $(window).load(function() {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider) {
+                            $('body').removeClass('loading');
+                        },
+                        controlsContainer: $(".custom-controls-container"),
+                        customDirectionNav: $(".custom-navigation a")
+                    });
+                });
+            </script>
+                    
+                           
+    </main>
+    <!-- .content -->
+
+    <footer class="footer">
+        <strong>Footer:</strong>
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- .wrapper -->
+
+</body>
+
+</html>

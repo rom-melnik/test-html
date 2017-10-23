@@ -1,0 +1,561 @@
+/* Eric Meyer's CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    width: 100%;
+
+
+}
+
+.wrapper {
+    width: 100%;
+
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+
+    height: 148px;
+    background: url(img/header.png);
+    font-family: 'ArialNarrow';
+}
+
+.header_logo {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header_title p {
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.header_left_menu {
+    height: 25px;
+    width: 25px;
+    background: url(img/header_left_menu.png) no-repeat 50%;
+    display: inline-block;
+    float: left;
+    border-right: 2px solid #393939;
+    margin-left: 80px;
+    padding: 37px 30px 37px;
+}
+
+.header_left_menu:hover {
+    background: url(img/header_left_menu_active.png) no-repeat 50%;
+}
+
+.header form {
+    position: relative;
+    width: 185px;
+    float: left;
+    margin-left: 140px;
+    margin-top: 25px;
+    height: 52px;
+
+}
+
+.header input {
+    height: 52px;
+    width: 0;
+    padding: 0px 32px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header input:focus {
+    width: 185px;
+    z-index: 1;
+    background: white;
+    margin-right: 50px;
+    margin-top: -5px;
+}
+
+.header button {
+
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: url(img/search%20normal.png) no-repeat 50%;
+}
+
+
+.header_question {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    background: url(img/question.png) no-repeat 50%;
+
+    cursor: pointer;
+
+}
+
+.header_hint {
+    font-family: "ArialRegular";
+    font-size: 16px;
+    color: transparent;
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+}
+
+.header_icons {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.main_hint_header:hover .header_hint {
+    color: rgba(231, 210, 149, 0.502);
+}
+
+.text-center {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: -40px;
+    margin-left: 40px;
+}
+
+.mx-user_icon {
+    width: 24px;
+    height: 31px;
+    display: inline-block;
+    background-image: url(img/user.png);
+    
+}
+
+.mx-user_name {
+
+    font-family: 'MyriadPro-Regular';
+    font-size: 19px;
+    color: #fff;
+    padding: 3px 14px;
+    max-width: 280px;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.block_vk {
+    width: 73px;
+    height: 100px;
+    display: inline-block;
+    background: url("img/vk.png") no-repeat 50% 50%;
+    float: left;
+    border-right: 2px solid #393939;
+    border-left: 2px solid #393939;
+    margin-left: 40px;
+}
+
+.block_ok {
+    border-right: 2px solid #393939;
+    background: url("img/%D0%BE%D0%BA.png") no-repeat 50% 50%;
+    border-right: 2px solid #393939;
+    border-left: 2px solid #393939;
+    float: left;
+    width: 73px;
+    height: 100px;
+    margin-left: -2px;
+}
+
+
+
+
+.block_vk:hover {
+    background: url("img/VK%20active.png") no-repeat 50% 50%;
+
+}
+
+.block_ok:hover {
+    background: url("img/%D0%BE%D0%BA%20active.png") no-repeat 50% 50%;
+}
+
+
+.header nav {
+    height: auto;
+    width: 100%;
+    background: url(img/menu.png);
+    border: none;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+    margin-top: 0px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+.header nav li {
+
+    height: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 3px solid #b8ce48;
+padding: 0 19.99px;
+
+}
+
+.header nav li a {
+
+    display: block;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+    background-image: none;
+    line-height: 1.2em;
+    font-weight: 600;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'ArialNarrow';
+    font-size: 18px;
+    color: #323232;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.header nav li.active,
+.header nav li:hover {
+    border-bottom: 3px solid #424242;
+    text-decoration: none;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.content {}
+
+.slider {
+    position: relative;
+}
+
+.flexslider {
+    height: 435px;
+
+}
+
+.flex-caption {
+    position: absolute;
+    width: 3.5%;
+    font-size: 35px;
+    font-family: "SegoeUILight", "Segoe UI";
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    margin-top: 50px;
+        color: #607078;
+    text-align: center;
+    margin-left: 400px;
+}
+
+
+
+.flex-description {
+    position: absolute;
+    width: 3.4%;
+    top: 160px;
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+    margin-left: 400px;
+    line-height: 1.4em;
+    color: #607078;
+}
+
+.custom-navigation {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+
+}
+    .flex-prev{
+    display: inline-block;
+    height: 43px;
+    width: 43px;
+    border: 1px solid black;
+    background-image: url(img/prev.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.flex-next{
+    position: absolute;
+    display: inline-block;
+    height: 43px;
+    width: 43px;
+    border: 1px solid black;
+    background-image: url(img/next.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    left: 50px;
+    top: 0px;
+    }
+.people {
+    background: url(img/who%20we%20are.png) 50%;
+    min-height: 620px;
+    color: #607078;
+    background-size: cover;
+        
+}
+.text_people{
+    margin-left: 30%;
+    width: 37%;
+}
+
+.title_people{
+        padding: 50px 0px 30px 0px;
+        font-size: 50px;
+    font-family: "SegoeUILight", "Segoe UI";
+    font-weight: 300;
+    text-transform: uppercase;
+        display: block;
+    text-align: center;
+}
+.people li {
+    text-indent: -1.2em;
+    font-family: 'ArialNarrow';
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.people ul {
+     padding-left: 55px; 
+     
+}
+.people p {
+    font-family: 'ArialNarrow';
+    font-size: 16px;
+    color: #607078;
+    margin-bottom: 15px;
+     line-height: 20px;
+
+}
+.people li::before {
+    content: "●";
+    color: #27cc01;
+    padding-right: 10px;}
+.bold{
+    font-weight: bold;
+}
+
+.button_enter{
+    text-align: center;
+    width: 100%;
+}
+.my_button {
+    width: 10%;
+    background: url(img/button.png);
+    border: none;
+    color: #fff;
+    font-family: 'ArialNarrow';
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.title_trajectory{
+        color: #607078;
+    margin-top: 65px;
+    margin-bottom: 100px;
+        font-size: 50px;
+    font-family: "SegoeUILight", "Segoe UI";
+    font-weight: 300;
+    text-transform: uppercase;
+        display: block;
+    text-align: center;
+}
+.trajectory{
+    background: url(img/trajectory.png) 50% 50% no-repeat;
+    background-size: 100%;
+
+    min-height: 700px;
+    
+overflow: hidden;}
+.interactive{
+        min-height: 885px;
+    background: url(img/interactive.png) no-repeat;
+    background-size: cover;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+    height: 100px;
+    background: #BFF08E;
+}
